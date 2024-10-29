@@ -1,0 +1,84 @@
+/* =Styles for 'normal' meta boxes
+-------------------------------------------------------------- */
+
+.anim8-field {
+	margin: 10px 0;
+}
+.anim8-label,
+.anim8-input {
+	display: inline-block;
+	vertical-align: top;
+}
+.anim8-label {
+	width: 24%;
+}
+.anim8-label.required {
+	font-weight: bold;
+}
+.anim8-label.required > span
+{
+	color: #c00;
+}
+
+/* 75% if field has label, 100% if no label */
+.anim8-input {
+	width: 100%;
+}
+.anim8-label ~ .anim8-input {
+	width: 75%;
+}
+.anim8-input h4 {
+	margin: 0;
+}
+.anim8-textarea {
+	resize: vertical;
+}
+
+/* Clone */
+.anim8-clone {
+	min-height: 24px;
+}
+.anim8-clone > input[type="radio"],
+.anim8-clone > input[type="checkbox"] {
+	margin: 6px 0 0 4px;
+}
+.anim8-button {
+	display: inline;
+	float: right;
+}
+
+/* Fix width to not overlap button for cloned sliders */
+.anim8-clone .anim8-slider {
+	width: 80%;
+	margin: 6px 0 0;
+}
+
+/* Fix buttons after sliders */
+.clearfix + .anim8-button {
+	margin-top: -16px;
+}
+
+/* Fix empty block below admin footer (issue #24) */
+#ui-datepicker-div {
+	display: none;
+}
+
+/* jQuery validation */
+label.error {
+	padding-left: 3px;
+	color: red;
+}
+input.error,
+textarea.error,
+select.error {
+	border: #c00 solid 1px !important;
+	background: #ffebe8 !important;
+}
+
+/* =Styles for 'side' meta boxes
+-------------------------------------------------------------- */
+
+#side-sortables .anim8-label,
+#side-sortables .anim8-input {
+	width: 100%;
+}
